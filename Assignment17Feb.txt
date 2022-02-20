@@ -1,0 +1,170 @@
+/* Write a Java program to take the number input from user in inches and convert it to meters. 
+*/   	1 inch = 0.0508 meters
+
+package Assignment;
+import java.util.Scanner;
+
+public class inchesToMeter {
+
+	public static void main(String[] args) {
+		 
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Entere the number :: ");
+		int inch=scan.nextInt();
+		double meter= inch*0.0254;
+		System.out.println(meter);
+
+	}
+
+}
+
+
+
+
+
+
+ /* Write a Java program to take the number input from user in hours and convert it into a number of days and years
+		1 hour - 0.0416667 day
+		1 hour = 0.000114155 year
+ */
+package Assignment;
+
+import java.util.Scanner;
+
+public class hoursToDaysYr {
+
+	public static void main(String[] args) {
+		 
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter number of hours :: ");
+		int hour = scan.nextInt();
+	     int Day= hour/24;
+		int yrs= hour/8760;
+		System.out.println(Day+"\n "+ yrs);
+		 
+		
+}}
+
+
+
+
+
+// Write a program to add 3 to the ASCII value of the any character user provides and print the equivalent character.
+
+ 
+package Assignment;
+
+import java.util.Scanner;
+
+public class asciiChar {
+
+	public static void main(String[] args)
+
+	{
+		Scanner sc = new Scanner(System.in);
+		{
+		System.out.println("Enter a character:");
+		}
+		
+		char ch = sc.next().charAt(0);
+		int abc = (int) ch;
+		{
+		System.out.println("ASCII value of character " + ch + " :: " + abc);
+		}
+		
+		int d = (int) ch + 3;
+		{
+		System.out.println("Add 3 to ASCII value :: " + d);
+		}
+		
+		char s = (char)d;
+		{
+		System.out.println("New ASCII character is :: " + s);
+		}
+	}
+
+}
+
+
+
+
+
+
+
+//// Write a Java program to convert temperature from Fahrenheit to Celsius degree.
+ 
+package Assignment;
+
+import java.util.Scanner;
+
+public class fahrToDegCelc 
+{
+
+	public static void main(String[] args)
+	{
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter temperature in degree fahreheit ::");
+		float fah = sc.nextFloat();
+
+		// 1 degreC = 33.8 degreeF :
+		float deg = fah % 33.8f;
+		
+				{								 
+		{
+		System.out.println("OP temperature in degree celsius ::" );
+		System.out.println(deg);
+		}
+
+	}
+
+}
+
+}
+
+
+
+
+
+//Write a Java program to compute body mass index (BMI)
+
+package Assignment;
+
+import java.util.Scanner;
+
+public class bodyMassIndex {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		float weight = sc.nextFloat(); // kg  
+		float height = sc.nextFloat(); // height in square meter
+
+		// kg/m^2 is the formula to calculate the BMI
+		
+		 
+		
+		float h = height*height;  	 
+		float BMI = weight /h; 			
+												 
+
+		{
+			System.out.println(BMI);
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
