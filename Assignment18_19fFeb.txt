@@ -1,0 +1,143 @@
+ //WAP that prints square of sum up to 10 example output : 1^2+ 2^2 + 3^2 + 4^2 + 5^2 + ........... + 9^2 + 10^2
+	//I dont know how to print actaully ??
+
+package Assignment;
+
+public class squareSum {
+
+	public static void main(String[] args) {
+		 
+		int i, Sum = 0;
+		for (i = 1; i <= 10; i++) {
+
+			Sum = Sum + (i * i);
+
+		}
+		System.out.println(Sum);
+	}
+}
+
+
+
+
+//Write a program to calculate the sum of all digits in a number
+
+
+package Assignment;
+
+public class sumDigit  {
+
+	public static void main(String[] args) {
+		 
+		int i = 343, r, sum = 0,num=0;
+		while (i> 0) {
+
+			r = i % 10;
+			sum = sum + r;
+			i=i/10;
+		}
+		System.out.println(sum);
+	}
+
+}
+
+
+
+
+//write a method which takes 2 numbers and 1 char(operation +, -, *, /) and performs the operation and returns the ans
+
+package Java.Fundamentals;
+
+import java.util.Scanner;
+
+public class twoNumChar {
+
+	public static void main(String[] args) {
+		 
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter 1st number :: ");
+		int i = scan.nextInt();
+		System.out.println("Enter 2st number :: ");
+		int p = scan.nextInt();
+		System.out.println("Enter the letter:: ");
+		char c= scan.next().charAt(0);
+		int result= i+p+c;
+		int result1= i-p-c;
+		int result2= i*p*c;
+		int result3= i/p/c;
+		
+		System.out.println(result);
+		System.out.println(result1);
+		System.out.println(result2);
+		System.out.println(result3);
+		
+		
+	}
+
+}
+
+
+
+
+
+/*
+Determine the output of the following code:
+int a = 10;
+if(++a==11 || ++a==12)
+++a;
+System.out.println(a);"
+*/
+
+package Assignment;
+
+public class Dete Problem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub+
+		int a=10;
+		if(++a==11||++a==12)
+			++a;
+		System.out.println(a);
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
